@@ -30,7 +30,7 @@ function updateTime() {
     const day = days[now.getDay()];
     const month = months[now.getMonth()];
 
-    const todaysDate = `Today is ${day}, ${month}, ${date}, ${year}`;
+    const todaysDate = `Today is ${day},  ${month}  ${date}, ${year}`;
 
     
 

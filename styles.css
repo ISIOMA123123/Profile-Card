@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+/* Card */
+
+.card {
+    max-width: 500px;
+    margin: auto;
+    background: rgb(198, 213, 219);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* image */
+img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+/* layout */
+figure {
+    text-align: center;
+}
+
+/* List */
+ul {
+    padding-left: 20px;
+}
+
+/* Links */
+a {
+    color: rgb(18, 5, 95);
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
