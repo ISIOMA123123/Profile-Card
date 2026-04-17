@@ -33,7 +33,7 @@ function updateTime() {
 }
 
 
-showExactDate();
+
 // Run immidiately
 updateTime();
 
