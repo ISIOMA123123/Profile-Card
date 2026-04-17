@@ -30,7 +30,7 @@ function updateTime() {
     const day = days[now.getDay()];
     const month = months[now.getMonth()];
 
-    const todaysDate = day + month + year;
+    const todaysDate = day +  date +  month  + year;
 
     dateElement.textContent = todaysDate;
 }
