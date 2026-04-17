@@ -1,6 +1,21 @@
 // time
 
 const timeElement = document.getElementById("time");
+const dateElement = document.getElementById("Date");
+
+function showExactDate() {
+  const now = new Date();
+
+  const formattedDate = now.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  });
+
+  console.log(formattedDate);
+
+  dateElement.textContent = formattedDate;
+}
 
 function updateTime() {
 
