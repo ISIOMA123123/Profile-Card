@@ -5,7 +5,16 @@ const timeElement = document.getElementById("time");
 function updateTime() {
 
     const now = new Date();
-    timeElement.textContent = Date.now();
+
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds()
+     
+    const currentTime = hours + ":" + minutes + ":" + seconds;
+
+    console.log(currentTime)
+
+    timeElement.textContent = currentTime;
 }
 
 // Run immidiately
