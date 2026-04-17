@@ -4,17 +4,19 @@ const timeElement = document.getElementById("time");
 const dateElement = document.getElementById("Date");
 
 function showExactDate() {
-  const now = new Date();
 
-  const formattedDate = now.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric"
-  });
+    const days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    
+    const now = new Date();
+    
+    const date = now.getDate();
+    const year = now.getFullYear();
+    const day = days[now.getDay()];
+    const month = months[now.getMonth()];
 
-  console.log(formattedDate);
-
-  dateElement.textContent = formattedDate;
+    dateElement.textContent = `Today is ${day}, ${month} ${date} ${year}`;
+ 
 }
 
 function updateTime() {
@@ -32,10 +34,12 @@ function updateTime() {
     timeElement.textContent = currentTime;
 }
 
-
+//Run date immidiately
+showExactDate();
 
 // Run immidiately
 updateTime();
 
 // Update every second
 setInterval(updateTime, 1000);
+
