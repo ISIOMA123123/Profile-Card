@@ -1,7 +1,7 @@
 // time
 
 const timeElement = document.getElementById("time");
-const dateElement = document.getElementById("Date");
+const dateElement = document.getElementById("date");
 
 
 
