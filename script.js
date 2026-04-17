@@ -34,8 +34,7 @@ function updateTime() {
     timeElement.textContent = currentTime;
 }
 
-//Run date immidiately
-showExactDate();
+
 
 // Run immidiately
 updateTime();
