@@ -32,6 +32,8 @@ function updateTime() {
     timeElement.textContent = currentTime;
 }
 
+
+showExactDate();
 // Run immidiately
 updateTime();
 
