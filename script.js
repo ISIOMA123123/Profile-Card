@@ -8,12 +8,12 @@ function showExactDate() {
     const days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     
-    const now = new Date();
+    const nowD = new Date();
     
-    const date = now.getDate();
-    const year = now.getFullYear();
-    const day = days[now.getDay()];
-    const month = months[now.getMonth()];
+    const date = nowD.getDate();
+    const year = nowD.getFullYear();
+    const day = days[nowD.getDay()];
+    const month = months[nowD.getMonth()];
 
     dateElement.textContent = `Today is ${day}, ${month} ${date} ${year}`;
  
@@ -34,7 +34,7 @@ function updateTime() {
     timeElement.textContent = currentTime;
 }
 
-
+showExactDate();
 
 // Run immidiately
 updateTime();
