@@ -3,6 +3,8 @@
 const timeElement = document.getElementById("time");
 
 function updateTime() {
+
+    const now = new Date();
     timeElement.textContent = Date.now();
 }
 
