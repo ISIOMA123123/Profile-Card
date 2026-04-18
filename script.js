@@ -11,9 +11,10 @@ function updateTime() {
 
     const hours = now.getHours();
     const minutes = now.getMinutes();
-    const seconds = now.getSeconds()
+    const seconds = now.getSeconds();
+    const milliseconds = now.getMilliseconds();
      
-    const currentTime = hours + ":" + minutes + ":" + seconds;
+    const currentTime = hours + ":" + minutes + ":" + seconds + ":" + milliseconds;
 
     console.log(currentTime)
 
@@ -43,5 +44,5 @@ function updateTime() {
 updateTime();
 
 // Update every second
-setInterval(updateTime, 1000);
+setInterval(updateTime, 10);
 
